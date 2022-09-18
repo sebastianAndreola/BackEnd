@@ -1,0 +1,56 @@
+<!-- Esta pagina fue realizado por Sebastian Andreola-->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="estilos/estilos.css">  <!--este es el estilo mio-->
+
+  </head>
+  <body>
+    <header>
+      Ejercicio 19/09/22 : Crear un sitio web con dos o tres paginas HTML que se vinculen entre si
+    </header>
+    <main>
+    <!--  <a href="C:/PFS 2022/4-BackEnd/pfs-demo/client/pagina.html"> Ir a pagina Secundaria</a>-->
+    <a href="pagina.html"> Ir a pagina Secundaria</a>
+       <section class="formularioCompra">
+         <form>
+           <h4> Formulario de compra</h4>
+           <label class="control" for="productos"> Elige un producto..</label>
+           <select name="productos" id="productos" class="control">
+               <option  selected> Pelota </option>
+               <option > Remera</option>
+               <option > Pantalon </option>
+               <option > Botines</option>
+           </select>
+           <h3> Cantidad</h3>
+           <input class= "control" type="text" name= "cantidad" id = "cantidad" value="">
+           <h3> Precio</h3>
+           <input class= "control" type="precio" name= "precio" id = "precio" value="0">
+           <button class="btn" id="btnAgregar"> Agregar</button>   
+         </form>
+       </section>
+
+       <section class="tabla">
+         <table id="tabla_">
+           <caption>
+            Tabla de productos agregados
+           </caption>
+           <thead>
+             <th>ITEM</th>
+             <th>CANTIDAD</th>
+             <th>PRECIO</th>
+             <th>PRECIO TOTAL X ITEM</th>             
+           </thead>                
+         </table>
+         <div class="contenedor">
+           <button class="btn" id="btnSumarTodo"> Sumar todo</button>   
+           <p id=precioTotal> </p>
+         </div>
+       </section>
+    </main>
+  <script src="mainFormulario.js"></script>
+</body>
+</html>
